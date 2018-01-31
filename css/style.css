@@ -1,0 +1,404 @@
+* {
+	box-sizing: border-box;
+}
+
+div{
+	font-family: roboto;
+}
+
+a {
+	text-decoration: none;
+	color: #452163;
+}
+
+h2{
+	text-align: center;
+	font-size: 1em;
+	text-transform: uppercase;
+	margin: 50px 0 50px 0;
+	color: #562828;
+}
+
+h3{
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+
+p{
+	text-align: center;
+	font-size: 1em;
+	font-weight: 300;
+	color: #696969;
+	line-height: 1.3em;
+}
+
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+.name{
+	font-size: 2em;
+	font-weight: 900;
+	text-align: center;
+	color: #0894C3;
+}
+
+.main-nav{
+	font-size: 1em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.main-nav a:hover {
+	color: #0894C3;
+}
+
+.home,
+.portfolio,
+.contact,
+.skills{
+	margin-bottom: 5px;
+	display: block;
+	background-color: #fff;
+	padding: 15px 0 15px 0;
+	font-weight: 700;
+
+}
+
+.profile-image {
+	width: 300px;
+	margin-top: 50px;
+}
+
+.content-image{
+	width: 100%;
+}
+
+.paragraph{
+	margin-bottom: 50px;
+}
+
+.footer-contact{
+	margin-top: 70px;
+	line-height: 1.5em;
+}
+
+.border{
+	border-top: 1px grey solid;
+	margin-top: 50px;
+}
+
+/* =================================
+  Wrapper
+==================================== */
+.wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.main-header{
+	background-color: rgba(195, 148, 8, 0.14);
+	padding-bottom: 50px;
+}
+
+.nav-header{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.wrap-content{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.footer-wrap{
+	background-color: rgba(195, 148, 8, 0.14);
+	padding-top: 50px; 
+}
+
+.footer-container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* =================================
+  Float
+==================================== */
+.footer-name,
+.back-top{
+	font-size: 1em;
+	line-height:0;
+	color: #696969;
+	vertical-align: top;
+
+}
+
+.footer-name{
+	float: left;
+	margin-top: 30px;
+}
+
+.back-top{
+	float: right;
+	margin-top: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.footer-nav{
+	display: none;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media screen and (min-width: 768px) {
+
+	p{
+		font-size: 1.5em;
+	}
+
+	.main-nav li{
+		display: inline-block;
+		background-color: unset;
+		font-size: 1em;
+		margin-bottom: 2em;
+
+	}
+
+	.main-header{
+		padding-bottom: 200px;
+	}
+
+	.home,
+	.portfolio,
+	.skills{
+		margin-right: 50px;
+	}
+
+	.footer-description{
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.footer-contact{
+		line-height: 2em;
+	}
+
+	.back-top{
+		display: none;
+	}
+
+	.footer-nav{
+		float: right;
+		display: unset;
+	}
+
+
+
+
+
+/* =================================
+  Float
+==================================== */
+	.intro{
+		width: 60%;
+		text-align: left;
+	}
+
+	.profile-image{
+		width: 40%;
+		float: right;
+	}
+
+	.intro,
+	.profile-image{
+		vertical-align: top;
+		margin: 0;
+	}
+
+	.nav-1,
+	.nav-2,
+	.nav-3,
+	.nav-4,
+	.nav-5,
+	.nav-6{
+		width: 49%;
+		vertical-align: top;
+		display: inline-block;
+	}
+
+	/*.nav-1,
+	.nav-3,
+	.nav-5,{
+		float: left;
+	}*/
+
+	.nav-2,
+	.nav-4,
+	.nav-6{
+		margin-left: 1%;
+	}
+
+	.footer-nav{
+		float: right;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+	p{
+		font-size: 1.5em;
+	}
+
+	.name,
+	.main-nav{
+		display: inline-block;
+	}
+
+	.main-nav{
+		float: right;
+	}
+
+	.main-header{
+		padding-bottom: 50px;
+	}
+
+	/* =================================
+	  Wrapper
+	==================================== */
+	.wrapper{
+		width: 100%;
+		margin: 0 auto;
+
+	}
+
+	.nav-header{
+		width: 90%;
+		margin: 0 auto;
+		text-align: left;
+		padding-top: 50px;
+		max-width: 1150px;
+	}
+
+	.wrap-content{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.footer-wrap{
+		padding-top: 50px; 
+	}
+
+	.footer-container{
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+
+	.paragraph {
+		font-size: 1em;
+	}
+
+	.footer-description{
+		width: 40%;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+
+	.footer-contact{
+		margin-top: 50px;
+	}
+
+	.wrap-header,
+	.main-content{
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+
+
+	/* =================================
+	  Float
+	==================================== */
+	.wrap-header{
+		display: inline-block;
+		margin-top: 50px;
+
+	}
+	.intro{
+		width: 50%;
+	}
+
+	.intro,
+	.profile-image{
+		vertical-align: top;
+	}
+
+	.nav-1,
+	.nav-2,
+	.nav-3,
+	.nav-4,
+	.nav-5,
+	.nav-6{
+		width: 32.3%;
+		vertical-align: top;
+		display: inline-block;
+	}
+
+	.nav-2,
+	.nav-3,
+	.nav-5,
+	.nav-6{
+		margin-left: 1%;
+	}
+
+	.nav-1,
+	.nav-4{
+		margin-left: 0;
+
+	}
+
+
+		/*.nav-1,
+		.nav-3,
+		.nav-5,{
+			float: left;
+		}*/
+
+	/*	.nav-2,
+		.nav-4,
+		.nav-6{
+			margin-left: 1%;
+		}*/
+
+	.footer-nav{
+		float: right;
+	}
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
+}
+
+
