@@ -82,6 +82,20 @@ p{
 	margin-bottom: 50px;
 }
 
+.skills_img{
+	width: 100%;
+	margin-bottom: -15px;
+}
+
+.skills_text{
+	padding: 20px 15px 20px 15px;
+	background-color: grey;
+	margin-top: 0;
+	margin-bottom: 70px;
+	color: #fff;
+	font-size: 1em;
+}
+
 .footer-contact{
 	margin-top: 70px;
 	line-height: 1.5em;
